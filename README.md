@@ -1,2 +1,0 @@
-# goodwhale.me
- 

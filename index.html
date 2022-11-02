@@ -1,78 +1,81 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="./css/animate.min.css" /><link rel='stylesheet' href='./css/font-awesome.min.css'/>
-    
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-    <title>Home</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="px-4 pb-16 mx-auto max-w-7xl sm:pb-24 sm:px-6 lg:px-8">
+      <div class="py-16 text-center">
+        <img src="./assets/Goodwhale-Logo.svg" class="w-40 h-40 mx-auto" />
+        <h1 class="pb-2 text-2xl font-semibold">Goodwhale</h1>
+        <h2 class="text-sm text-gray-400">Feel Good, Be Good, Inspire Good</h2>
+      </div>
 
-</head>
-<body>
-<!-- Main container -->
-<div class="page-container">
-    <!-- bloc-0 --><div class="bloc l-bloc bgc-white bloc-fill-screen" id="bloc-0">
-	<div class="container fill-bloc-top-edge">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="navbar-collapse navbar-1 collapse">
-			</div>
-		</nav>
-	</div>
-	<div class="container">
-		<div class="row ">
-			<div class="col-sm-12">
-				<img src="img/logo.png" class="img-responsive center-block animated pulse" width="600" />
-				<h1 class="text-center hero-bloc-text">
-					Technologies for nature
-				</h1>
-				<h3 class="text-center mg-lg hero-bloc-text-sub">
-					That includes us, X-monkeys
-				</h3>
-			</div>
-		</div>
-	</div>
-	<div class="container fill-bloc-bottom-edge">
-		<div class="row">
-			<div class="col-sm-12">
-			</div>
-		</div>
-	</div>
-</div><!-- bloc-0 END --><!-- bloc-1 --><div class="bloc l-bloc bgc-white" id="bloc-1">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-10">
-				<h3 class="mg-md">
-					Check-out our first project, Tortuba
-				</h3>
-			</div>
-			<div class="col-sm-2">
-				<a href="https://tortuba.com" class="btn  btn-d  btn-lg animated shake-hvr" target="_blank">Dive Now</a>
-			</div>
-		</div>
-	</div>
-</div><!-- bloc-1 END --><!-- ScrollToTop Button --><a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a><!-- ScrollToTop Button END-->
-</div>
-<!-- Main container END -->
-    
+      <div class="overflow-hidden bg-gray-200 divide-y divide-gray-200 rounded-lg shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+          <div class="relative p-6 bg-white rounded-tl-lg rounded-tr-lg sm:rounded-tr-none group focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
+            <div>
+              <img src="./assets/NoMeatToday.svg" class="w-24 h-24 rounded-2xl" />
+            </div>
+            <div class="mt-8">
+              <h3 class="text-lg font-medium">
+                <a href="https://nomeat.today" class="focus:outline-none">
+                  <!-- Extend touch target to entire panel -->
+                  <span class="absolute inset-0" aria-hidden="true"></span>
+                  No Meat Today
+                </a>
+              </h3>
+              <p class="mt-2 text-sm text-gray-500">I dairy you!</p>
+            </div>
+            <span class="absolute text-gray-300 pointer-events-none top-6 right-6 group-hover:text-gray-400" aria-hidden="true">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z" />
+              </svg>
+            </span>
+          </div>
+          <div class="relative p-6 bg-white rounded-tl-lg rounded-tr-lg sm:rounded-tr-none group focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
+            <div>
+              <img src="./assets/Teambakery.svg" class="w-24 h-24 rounded-2xl" />
+            </div>
+            <div class="mt-8">
+              <h3 class="text-lg font-medium">
+                <a href="https://teambakery.com" class="focus:outline-none">
+                  <!-- Extend touch target to entire panel -->
+                  <span class="absolute inset-0" aria-hidden="true"></span>
+                  Teambakery
+                </a>
+              </h3>
+              <p class="mt-2 text-sm text-gray-500">Creator of team rituals</p>
+            </div>
+            <span class="absolute text-gray-300 pointer-events-none top-6 right-6 group-hover:text-gray-400" aria-hidden="true">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z" />
+              </svg>
+            </span>
+        </div>
+      </div>
 
-</body>
-    
-<!-- Google Analytics -->
- 
-<!-- Google Analytics END -->
+      <footer class="bg-white">
+        <div class="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
+          <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
+            <div class="px-5 py-2">
+              An <a href="https://sowenjub.me" class="text-base text-gray-500 hover:text-gray-900">Arnaud Joubay</a> Company
+            </div>
+          </nav>
+          <div class="flex justify-center mt-8 space-x-6">
+            <a href="https://twitter.com/GoodwhaleMe" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Twitter</span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </a>
+          </div>
+          <p class="mt-8 text-base text-center text-gray-400">&copy; 2022 Goodwhale Eurl. All rights reserved.</p>
+        </div>
+      </footer>
 
+
+    </div>
+  </body>
 </html>
